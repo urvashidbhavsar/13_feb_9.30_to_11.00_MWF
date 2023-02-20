@@ -1,0 +1,34 @@
+HTML => Hypertext Markup Language
+
+=> it create structure on Webpage.
+
+=> who's developed => tim berner's lee
+=> in year 1993
+
+What is difference between HTML and HTML5?
+=> it added tag in new version => audio and video, svg and canvas
+=> embeded multimedia
+
+what is tag?
+it is written with angle bracket. for ex, <html>
+
+what is element?
+a word written between angle bracket it known as element
+for ex, in <html> tag html is an element.
+
+container / structure tag ??
+we written data / lines / information / content in between tag it known as container. <html>...</html>
+
+non-closing / void tag / non-structure =>
+<link>, <meta>, <input>, <br>, <hr>, <img>
+
+what is attribute?
+=> it is additional functionality.
+for ex, <body bgcolor = "red" > in this bgcolor is attribute.
+red = it is attribute value
+
+there is some attribute are dropped or remove from HTML5 =>
+bgcolor, align
+
+there is some tags are dropped or remove from HTML5 =>
+<big>, <center>, <frame>, <frameset>, <strike>, <tt>
