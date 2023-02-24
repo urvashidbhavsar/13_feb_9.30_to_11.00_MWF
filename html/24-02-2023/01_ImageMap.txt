@@ -1,0 +1,10 @@
+image map create on 3 shapes
+rect, poly, circle
+
+for create image map used 
+<map> tag and <area> tag 
+
+in image map there are main attributes =>
+coords => co-ordinate
+shape => circle ,rect and poly
+href => hyperlink reference
