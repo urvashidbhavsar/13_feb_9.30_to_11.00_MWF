@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- HTML forms 
+        action => forward to another page -->
+    <!-- method =>
+        get    = show form whole information in the URL.
+        post   = wrap all information and send to next page.
+
+        readonly and required both are do not work together.
+
+        input type updated in html5
+        = color, email, date, datetime, datetime-local, week, month, time
+    -->
+    <form action="#" method="post" name="" style="">
+        <label for="fname">Name : </label>
+        <input type="text" id="fname" name="" placeholder="Enter Name" required>
+        <br><br>
+
+        <label for="">Email</label>
+        <input type="email" name="" id="">
+        <br><br>
+
+        <label for="">password</label>
+        <input type="password" name="" id="">
+        <br><br>
+
+        <label for="">Address</label>
+        <textarea name="" id="" cols="30" rows="3"></textarea>
+        <br><br>
+
+        <label for="">Birthdate</label>
+        <input type="date">
+        <br><br>
+
+        <label for="">city</label>
+        <!-- dropdown list -->
+        <select name="" id="">
+            <option value="">--select---</option>
+            <option value="">Surat</option>
+            <option value="">Baroda</option>
+        </select>
+        <br><br>
+        
+        <label for="">Color</label>
+        <input type="color" name="" id="">
+        <br><br>
+
+        <label for="">datetime</label>
+        <input type="datetime" name="" id="">
+        <br><br>
+
+        <label for="">datetime-local</label>
+        <input type="datetime-local" name="" id="">
+        <br><br>
+
+        <label for="">week</label>
+        <input type="week" name="" id="">
+        <br><br>
+
+        <label for="">Month</label>
+        <input type="month" name="" id="">
+        <br><br>
+
+        <label for="">Upload file</label>
+        <input type="file" name="" id="">
+        <br><br>
+
+        <label for="">Input type Image</label>
+        <input type="image" src="../03-03-2023/img2.jpeg" name="" id="" height="50px" width="50px">
+        <br><br>
+
+        <label for="">Range</label>
+        <input type="range" name="" id="">
+        <br><br>
+
+        <label for="">Time</label>
+        <input type="time" name="" id="">
+        <br><br>
+
+        <label for="">Number</label>
+        <input type="number" name="" id="">
+        <br><br>
+
+        <!-- from multiple option select only 1 option than used radio button -->
+        <label for="">Gender</label>
+        <input type="radio" name="gen" id="">Male
+        <input type="radio" name="gen" id="">Female
+        <input type="radio" name="gen" id="">others
+        <br><br>
+        <!-- choose multiple option from given options -->
+        <label for="">Hobbies</label>
+        <input type="checkbox" name="c1" id="">Playing
+        <input type="checkbox" name="c2" id="">Reading
+        <input type="checkbox" name="c3" id="">singing
+        <br><br>
+        <button type="submit">Click Here</button>
+        <button type="reset">Clear</button>
+        <button type="button">Button</button>
+
+        <input type="button" value="input-button">
+        <input type="submit" value="input-submit">
+        <input type="reset" value="input-reset">
+    </form>
+</body>
+</html>
