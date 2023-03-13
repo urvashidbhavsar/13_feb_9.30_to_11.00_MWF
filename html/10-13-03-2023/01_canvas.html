@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="mycanvas" height="200px" width="200px"></canvas>
+
+    <script>
+        var rect = document.getElementById("mycanvas");
+        var r = rect.getContext("2d");
+        r.fillStyle = "red"
+        r.fillRect(10,10,200,100);
+    </script>
+</body>
+</html>
