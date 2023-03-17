@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .head::first-letter{
+            color: red;
+        }
+        div{
+            height:auto;
+            width: 200px;
+        }
+        div::first-line{
+            color: blue;
+        }
+        /* in ::before and ::after content property is complusory */
+        .head2::before{
+            content: "\1F602";
+        }
+        .head2::after{
+            content: "\1F601";
+        }
+        input::placeholder{
+            color: red;
+        }
+        .div1::selection{
+            background-color: black;
+            color: white;
+        }
+        li::marker{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- pseudo element -->
+    <h1 class="head">Hello world</h1>
+    <div class="div1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quibusdam tempore quaerat obcaecati in provident facilis natus temporibus eius, aspernatur molestias praesentium consequatur vero, cupiditate nesciunt architecto inventore, expedita nostrum.
+    </div>
+    <h1 class="head2">Hello user</h1>
+    <input type="text" placeholder="Enter name">
+    <ul>
+        <li>List 1</li>
+        <li>list 2</li>
+    </ul>
+</body>
+</html>
