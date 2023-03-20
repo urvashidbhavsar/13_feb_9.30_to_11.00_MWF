@@ -1,0 +1,11 @@
+how to positionate your content on the webpage.
+
+position : static (default).
+
+position : fixed
+position : sticky
+position : relative
+position : absolute
+
+some properties are only working with position.
+left, top, bottom, right, z-index

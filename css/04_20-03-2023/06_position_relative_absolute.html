@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* relative work like parent */
+        /* absolute work like child */
+        .main{
+            position: relative;
+        }
+        .div1{
+            position: absolute;
+            top: 0;
+            left:0;
+        }
+        .div2{
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+        .div3{
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+        img{
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="div1">
+            <img src="images/img1.jpg" alt="">
+        </div>
+        <div class="div2">
+            <img src="images/img2.jpg" alt="">
+        </div>
+        <div class="div3">
+            <img src="images/img3.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
