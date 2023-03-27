@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            /* display : grid also apply in parent class */
+            display: grid;
+            /* grid-template-columns: auto auto auto auto auto; */
+
+            /* 1fr = 1 fraction */
+            /* grid-template-columns: 1fr 2fr 1fr 1fr 1fr; */
+
+            grid-template-columns: repeat(5,1fr);
+            justify-items: center;
+            gap: 20px;
+        }
+        .div1, .div3, .div5, .div7, .div9{
+            background-color: chartreuse;
+            height: 100px;
+            width: 100px;
+        }
+        .div2, .div4, .div6, .div8, .div10{
+            background-color: crimson;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+        <div class="div5">5</div>
+        <div class="div6">6</div>
+        <div class="div7">7</div>
+        <div class="div8">8</div>
+        <div class="div9">9</div>
+        <div class="div10">10</div>
+    </div>
+</body>
+</html>
