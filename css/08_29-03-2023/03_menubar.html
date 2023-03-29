@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul{
+            list-style: none;
+        }
+        .container{
+            margin: 0px 50px;
+        }
+        header{
+            background-color: lightcoral;
+        }
+        header .header-padding{
+            padding: 20px 0px;
+        }
+        header .header-flex{
+            display: flex;
+            align-items: center;
+        }
+        header .header-flex .logo{
+            flex: 0.5;
+        }
+        header .header-flex .logo h1{
+            font-size: 30px;
+        }
+        header .header-flex .logo a{
+            color: rgb(66, 65, 65);
+        }
+        header .header-flex .logo span{
+            color: purple;
+        }
+        header .header-flex .nav{
+            flex: 1;
+        }
+        header .header-flex .nav ul{
+            display: flex;
+            justify-content: end;
+            gap: 25px;
+        }
+        header .header-flex .nav ul a{
+            color: rgb(66, 65, 65);
+            font-weight: 700;
+        }
+        header .header-flex .nav ul .active{
+            color: purple;
+        }
+        header .header-flex .nav ul a:hover{
+            color: purple;
+        }
+        header .header-flex .theme{
+            flex: 0.2;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-padding">
+                <div class="header-flex">
+                    <div class="logo">
+                        <h1>
+                            <a href="#">
+                                <span class="fa-solid fa-lightbulb"></span>
+                                Intelligence
+                            </a>
+                        </h1>
+                    </div>
+                    <div class="nav">
+                        <ul>
+                            <li><a href="" class="active">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Pages</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li>
+                                <span class="fa-solid fa-search"></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="theme">
+                        <div>
+                            <span class="fa-solid fa-moon"></span>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </header>
+</body>
+</html>

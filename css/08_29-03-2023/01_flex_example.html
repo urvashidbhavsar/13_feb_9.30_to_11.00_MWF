@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .flex-content{
+            background-color: lightcyan;
+        }
+        .flex-content .container{
+            margin: 0px 80px;
+        }
+        .flex-content .flex-padding{
+            padding: 50px 0px;
+        }
+        .flex-content .flexbox{
+            display: flex;
+        }
+        .flex-content .flexbox .leftside{
+            flex: 1;
+        }
+        .flex-content .flexbox .rightside{
+            flex: 1;
+            padding: 50px;
+        }
+        .flex-content .flexbox .leftside img{
+            height: auto;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .flex-content .flexbox .rightside h5{
+            font-size: 20px;
+            color: orangered;
+            text-transform: uppercase;
+            font-weight: 300;
+            /* padding-bottom: 30px; */
+            line-height: 50px;
+        }
+        .flex-content .flexbox .rightside h1{
+            font-size: 40px;
+            color: rgb(28, 28, 28);
+            text-transform: capitalize;
+            padding-bottom: 25px;
+        }
+        .flex-content .flexbox .rightside p{
+            color: gray;
+            line-height: 25px;
+            letter-spacing: 0.8px;
+            padding-bottom: 20px;
+
+        }
+        .flex-content .flexbox .rightside button{
+            height: 40px;
+            width: 150px;
+            background-color: transparent;
+            border-radius: 5px;
+            border: 2px solid orangered;
+            color: orangered;
+            font-weight: 700;           
+        }
+        .flex-content .flexbox .rightside button:hover{
+            color: white;
+            background-color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <section class="flex-content">
+        <div class="container">
+            <div class="flex-padding">
+                <div class="flexbox">
+                    <div class="leftside">
+                        <img src="images/image1.jpg" alt="">
+                    </div>
+                    <div class="rightside">
+                        <h5>About Us</h5>
+                        <h1>designing your exterior dreams into reality!</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur minus suscipit dolor nisi architecto cum, fugiat odio nihil sunt atque ut ipsam repellendus maiores deleniti, dignissimos deserunt, eveniet neque voluptatum.</p>
+                        <button>Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
