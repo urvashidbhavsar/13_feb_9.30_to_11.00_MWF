@@ -1,0 +1,6 @@
+@media (min-width:768px) {
+    .header-con{
+        margin: 0px 30px;
+    }
+   /* = header menubar inherit value from min width 576px = */
+}

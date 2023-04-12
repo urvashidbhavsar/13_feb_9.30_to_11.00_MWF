@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .list{
+            background-color: darkcyan;
+            padding: 10px;
+        }
+        .list ul{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .list ul li{
+            padding: 10px;
+        }
+        .list .disp-list{
+            position: relative;
+        }
+        .list .disp-list .sub-list{
+            display: none;
+            background-color: darkblue;
+            padding: 10px;
+            position: absolute;
+            top: 35px;
+            left: 0;
+            width:100px;
+            height: auto;
+            border-radius: 5px;
+        }
+        .list .disp-list .sub-list li{
+            padding: 5px;
+        }
+        .list .disp-list .sub-list li::after{
+            content: "";
+            height: 2px;
+            width: 100%;
+            background-color: white;
+            display: block;
+        }
+        .list .disp-list:hover .sub-list{
+            display: block;
+        }
+        .list .disp-list a i{
+            transition: 1s all ease;
+        }
+
+        .list .disp-list:hover a i{
+            /* transform: rotateX(180deg); */
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="list">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li class="disp-list">
+                <a href="">Service
+                <i class="fa-solid fa-angle-down"></i> </a> 
+                    <ul class="sub-list">
+                        <li><a href="">Service 1</a></li>
+                        <!-- <hr> -->
+                        <li><a href="">Service 2</a></li>
+                    </ul>
+            </li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </div>
+</body>
+</html>

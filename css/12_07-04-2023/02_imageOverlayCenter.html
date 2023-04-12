@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 300px;
+            width: 300px;
+        }
+        .main{
+            height: 300px;
+            width: 300px;
+            position: relative;
+            overflow: hidden;
+        }
+        .main .text{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            color: white;
+            display: grid;
+            place-content: center;
+            background-color: rgba(0, 0, 0, 0.551);
+            transform: scale(0);
+            transition: 1s all ease;
+        }
+        .main:hover .text{
+            transform: scale(1) rotate(360deg);
+        }
+
+        /* 2nd image */
+        .main-1{
+            height: 300px;
+            width: 300px;
+            position: relative;
+            overflow: hidden;
+        }
+        .main-1 .text{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            color: white;
+            display: grid;
+            place-content: center;
+            background-color: rgba(0, 0, 0, 0.551);
+            transform: scale(0);
+            transition: 1s all ease;
+        }
+        .main-1 .text .delay-text{
+            transform: scale(0);
+            transition: 1s ease all;
+            transition-delay: 2s;
+        }
+        .main-1:hover .text{
+            transform: scale(1) rotate(360deg);
+        }
+        .main-1:hover .delay-text{
+            transform: scale(1) rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <!-- image overlay center -->
+    <div class="main">
+        <img src="wallpaper.jpeg" alt="">
+        <div class="text">
+            <h1>Image 1</h1>
+            <p>this is wallpaper</p>
+        </div>
+    </div>
+    <br>+
+    <!-- image overlay center with delay content  -->
+    <div class="main-1">
+        <img src="wallpaper.jpeg" alt="">
+        <div class="text"> <!--outer-->
+            <div class="delay-text"> <!--content delay-->
+                <h1>Image 1</h1>
+                <p>this is wallpaper</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

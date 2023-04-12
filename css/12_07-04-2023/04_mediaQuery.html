@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            background-color: aquamarine;
+        }
+        @media (max-width:576px) {
+            p{
+                background-color: darkcyan;
+            }
+        }
+        @media (min-width:576px) {
+            p{
+                background-color: rebeccapurple;
+            }
+        }
+        @media (min-width:768px) {
+            p{
+                background-color: darksalmon;
+            }
+        }
+        @media (min-width:992px) {
+            p{
+                background-color: chartreuse;
+            }
+        }
+        @media (min-width:1200px) {
+            p{
+                background-color: aquamarine;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- using media query we can set content as per device width 
+    
+        mini mobile device  =    < 576px
+        mobile device       =    > 576px
+        tablet device       =    > 768px
+        mini leptop         =    > 992px
+        large leptop        =    > 1140 = 1200px
+        extra large         =    > 1400
+    -->
+
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur molestias dignissimos eaque fuga quidem, itaque animi quis at iure illo facilis cupiditate! Rerum pariatur obcaecati minima nostrum a ipsam totam?
+    </p>
+</body>
+</html>
