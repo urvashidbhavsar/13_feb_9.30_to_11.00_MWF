@@ -1,0 +1,9 @@
+@media (min-width:992px){
+    /* ==================== navigations =============== */
+    header .navigation .nav{
+        display: block;
+    }
+    header .navigation .btn-menu button{
+        display: none;
+    }
+}
