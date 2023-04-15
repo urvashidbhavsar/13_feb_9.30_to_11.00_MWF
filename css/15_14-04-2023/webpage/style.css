@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* ========= common css ============= */
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container{
+    margin: 0px 80px;
+}
+.header-con{
+    margin: 0px 50px;
+}
+/* ============== header menubar ============= */
+header{
+    background-color:#d01326;
+}
+header .header-p{
+    padding: 10px 0px;
+}
+header .menubar{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+header .menubar .logo{
+    flex: 1;
+}
+header .menubar .logo h1{
+    font-size: 40px;
+}
+header .menubar .logo h1 a{
+    color: white;
+    letter-spacing: 3px;
+}
+header .menubar .logo h1 span{
+    color: orange;
+}
+header .menubar .nav{
+    flex: 1.5;
+    display: flex;
+    justify-content: end;
+}
+header .menubar .nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+header .menubar .nav ul li{
+    padding: 20px;
+}
+header .menubar .nav a{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.7s all ease;
+}
+header .menubar .nav a:hover{
+    color: orange;
+}
+header .menubar .nav a.active{
+    color: orange;
+}
+header .menubar .nav a span{
+    font-size: 12px;
+}
+header .menubar .toggle-btn{
+    /* flex:0.2; */
+    display: flex;
+    justify-content: end;
+}
+header .menubar .toggle-btn button{
+    display: none;
+    height: 40px;
+    width: 40px;
+    font-size: 22px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid black;
+}
+/* === dropdown === */
+header .menubar .nav .disp{
+    position: relative;
+}
+header .menubar .nav .menus{
+    display: none;
+}
+header .menubar .nav .disp:hover .menus{
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: -20px;
+    width: 150px;
+    height: auto;
+    background-color: white;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 5px;
+}
+header .menubar .nav .menus li{
+    padding: 10px;
+}
+header .menubar .nav .menus a{
+    color: black;
+}
+header .menubar .nav .menus a:hover{
+    color: orange;
+}
+header .menubar .nav .disp .cube{
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    position: absolute;
+    left: 65px;
+    top: -8px;
+    transform: rotate(45deg);
+}
+/* ====== slider-main ====== */
+.slider-main{
+    display: flex;
+}
+.slider-main .leftside-text{
+    flex: 1;
+    display: grid;
+    place-content: center;
+    padding: 20px 0px;
+}
+.slider-main .leftside-text h4{
+    font-size: 22px;
+    color: #006989;
+    padding-bottom: 15px;
+}
+.slider-main .leftside-text h1{
+    font-size: 50px;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+.slider-main .leftside-text h1 span{
+    font-weight: 700;
+}
+.slider-main .leftside-text p{
+    color: rgb(73, 72, 72);
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+.slider-main .leftside-text .btn-read{
+    height: 46px;
+    width: 140px;
+    font-size: 16px;
+    font-weight: 700;
+    border: 2px solid #006989;
+    background-color: transparent;
+    border-radius: 5px;
+    display: grid;
+    place-content: center;
+    position: relative;
+}
+.slider-main .leftside-text .btn-read .readl{
+    color: #006989;
+    transition: 0.4s all ease;
+
+}
+.slider-main .leftside-text .btn-read .overlay{
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scale(0);
+    transform-origin: 100% 100%;
+    background-color: #006989;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    transition: 0.4s all ease;
+}
+.slider-main .leftside-text .btn-read .overl{
+    color: white;
+}
+.slider-main .leftside-text .btn-read:hover .readl{
+    color: white;
+}
+.slider-main .leftside-text .btn-read:hover .overlay{
+    transform: scale(1);
+}
+.slider-main .rightside-img{
+    flex: 1;
+}
+.slider-main .rightside-img img{
+    max-width: 100%;
+    height: auto;
+}
+/* ======= booking section ======== */
+.booking-sec{
+    background-color: antiquewhite;
+}
+.booking-sec .booking-p{
+    padding: 100px 0px;
+}
+.booking-sec .grid-box{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.booking-sec .grid-box .grid1 .icon{
+    background-color: #c82a3c89;
+    height: 65px;
+    width: 65px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    transition: 0.5s all ease;
+}
+.booking-sec .grid-box .grid1 .icon span{
+    font-size: 25px;
+    color: #d01326;
+    transition: 0.5s all ease;
+}
+.booking-sec .grid-box .grid1:hover .icon{
+    background-color: #00698967;
+}
+.booking-sec .grid-box .grid1:hover span{
+    color: #006989;
+}
+.booking-sec .grid-box .grid1 .text{
+    padding: 20px 0px;
+}
+.booking-sec .grid-box .grid1 .text a{
+    color: rgb(24, 24, 24);
+    transition: 0.5s all ease;
+}
+.booking-sec .grid-box .grid1 .text a:hover{
+    color: #e13748;
+}
+.booking-sec .grid-box .grid1 .text p{
+    padding: 10px 0px;
+    color: rgb(73, 72, 72);
+}
