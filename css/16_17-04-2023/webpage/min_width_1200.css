@@ -1,0 +1,9 @@
+@media (min-width:1200px) {
+    .container{
+        margin: 0px 80px;
+    }
+    /* ===== header menubar inherit from min width 992px ===== */
+     /* = slider-main inherit value from min width 992px */
+
+     /* === package section inherit value from 992px */
+}

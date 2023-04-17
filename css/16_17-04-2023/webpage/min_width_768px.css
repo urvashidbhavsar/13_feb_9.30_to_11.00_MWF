@@ -1,0 +1,25 @@
+@media (min-width:768px) {
+    .header-con{
+        margin: 0px 30px;
+    }
+    .container{
+        margin: 0px 50px;
+    }
+   /* = header menubar inherit value from min width 576px = */
+   /* = slider-main inherit value from min width 576px */
+    /* ======= booking section ======== */
+    .booking-sec .grid-box{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+        /* ====== package ======= */
+        .packages .grid-box{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+         /* video-play section */
+         .video-play .short-video-flex{
+            display: flex;
+            flex-direction: row;
+        }
+}
