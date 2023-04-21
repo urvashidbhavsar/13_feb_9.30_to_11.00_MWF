@@ -1,0 +1,20 @@
+@media (min-width:1200px) {
+    .container{
+        margin: 0px 80px;
+    }
+    /* ===== header menubar inherit from min width 992px ===== */
+     /* = slider-main inherit value from min width 992px */
+
+     /* === package section inherit value from 992px */
+
+     /* == booking section inherit from 992px */
+
+     /* discount section inherit from 992px */
+     /* review section inherit from 992px */
+      /* ======= footer ========= */
+      footer .footer-grid{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 2fr;
+        gap: 10px;
+    }
+}

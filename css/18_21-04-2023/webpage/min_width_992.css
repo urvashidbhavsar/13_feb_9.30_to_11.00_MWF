@@ -1,0 +1,53 @@
+@media (min-width:992px) {
+    .header-con{
+        margin: 0px 50px;
+    }
+    /* ============== header menubar ============= */
+    header .menubar .nav{
+        display: flex;
+    }
+    header .menubar .toggle-btn button{
+        display: none;
+    }
+     /* ========= slide main ========= */
+     .slider-main{
+        display: flex;
+        flex-direction: row;
+    }
+     /* ======= booking section ======== */
+     .booking-sec .grid-box{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+        /* ====== package ======= */
+        .packages .grid-box{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+
+    /* video-play section inherit from 768px */
+
+     /* booking section */
+    .booking-form .grid-form{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-items: center;
+    }
+      /* discount section */
+      .dis-coupen .flex-box{
+        display: flex;
+        flex-direction: row;
+    }
+          /* ==== customer review ==== */
+          .customer-feedback .cust-review-grid{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+
+       /* ======= footer ========= */
+       footer .footer-grid{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 10px;
+    }
+}
