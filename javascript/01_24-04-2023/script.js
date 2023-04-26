@@ -1,1 +1,0 @@
-document.write("Exnternal File created")
