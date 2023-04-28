@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- logical -->
+    <script>
+        var num = 10;
+        var ans;
+
+        // if one value false so all condition is false
+        // there is both value are true then it return true statement
+        ans = (num < 10 && 20 > num)
+        document.write("<br>" + ans)
+
+        // in this one condition is true return true value.
+        // when both condition are false then it return false.
+        ans = (num < 10 || 20 > num)
+        document.write("<br>" + ans)
+
+        // work opposite
+        ans = (!(num < 10 && 20 > num))
+        document.write("<br>" + ans)
+
+    </script>
+</body>
+</html>
