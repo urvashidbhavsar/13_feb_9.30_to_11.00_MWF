@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p class="p4"></p>
+    <div></div>
+    <script>
+        // there are two properties to print value 
+        // innerHTML and innerText
+        document.getElementById("p1").innerHTML = "<i>get element by id</i>";
+        document.getElementById("p2").innerText = "<i>get element by id</i>";
+
+        // you can call id, class and element
+        document.querySelector("#p3").innerText = "get id using query selector";
+        document.querySelector(".p4").innerText = "get class using query selector"
+        document.querySelector("div").innerText ="get element using query selector"
+    </script>
+</body>
+</html>
