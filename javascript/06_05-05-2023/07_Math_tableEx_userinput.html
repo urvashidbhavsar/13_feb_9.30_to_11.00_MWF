@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="">Enter any Table Number : </label>
+        <input type="text" name="" id="tblno">
+
+        <button onclick="return table_display()">Display</button>
+    </form>
+    <div id="div1"></div>
+
+
+    <!-- display maths table -->
+    <script>
+        function table_display(){
+            var no = document.getElementById("tblno").value;
+            var div_disp = document.getElementById("div1")
+            var counts = 1, res="";
+            if(no == ""){
+                alert("Enter value")
+            }else{
+                for(counts=1;counts<11;counts++){
+                    res = res +"<p>" + no + "*" + counts + "=" + (no*counts) + "</p>";
+                }
+                div_disp.innerHTML = res
+                return false
+            }
+        }
+    </script>
+</body>
+</html>

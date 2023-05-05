@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var link = "https://www.javatpoint.com/what-is-css";
+        var op_link;
+        function open_fn(){
+           op_link = window.open(link)
+        }
+        function close_fn(){
+        //    op_link.window.close()
+        op_link.close()
+        }
+        function forword_fun(){
+            history.forward()
+        }
+    </script>
+</head>
+<body>
+    <button id="btn1" onclick="open_fn()">Open</button>
+    <button id="btn2" onclick="close_fn()">Close</button>
+    <button onclick="forword_fun()">Forword</button>
+</body>
+</html>
