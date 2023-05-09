@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .theme-change{
+            background-color: #292828;
+            color: white;
+        }
+        .theme-change a{
+            color: blue;
+            text-decoration: none;
+        }
+        img{
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="">
+        <img src="moon.PNG" alt="" id="icon">
+    </div>
+    <h1>Hello world</h1>
+    <a href="">Click Here</a>
+
+    <script>
+        let icon = document.querySelector("#icon")
+        icon.addEventListener("click",function(){
+            document.body.classList.toggle("theme-change");
+
+            // for replace the icon
+            if(document.body.classList.contains("theme-change")){
+               icon.src = "sun.PNG"
+            //    icon.src = "images/sun.PNG"
+            // icon.src = "../images/sun.PNG"
+            }else{
+                icon.src = "moon.PNG"
+            }
+        })
+    </script>
+</body>
+</html>

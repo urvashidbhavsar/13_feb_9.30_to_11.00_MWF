@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="counter"></div>
+    <div id="counter1"></div>
+    <script>
+        // set the timing 
+        let set_count = setInterval(updateVal,50)
+        let start_num = 1000;
+        function updateVal(){
+            let count = document.getElementById("counter");
+            count.innerHTML = ++start_num;
+            if(start_num == 2000){
+                clearInterval(set_count)
+            }
+        }
+    </script>
+</body>
+</html>

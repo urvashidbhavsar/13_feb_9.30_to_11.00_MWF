@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .theme-change{
+            background-color: #292828;
+            color: white;
+        }
+        .theme-change a{
+            color: blue;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- we have 2 option use addeventListner or onclick event -->
+    <div class="">
+        <!-- <span class="fa-solid fa-moon" onclick="icon_replace()"></span> -->
+        <span class="fa-solid fa-moon"></span>
+    </div>
+    <h1>Hello world</h1>
+    <a href="">Click Here</a>
+
+    <script>
+        // toggle() => add and remove value / class
+        // add() => only add value / class
+        // remove() => only remove value / class
+        // contains() => check the value 
+        // classList (property) => get css class
+        let icon = document.querySelector(".fa-moon")
+        icon.addEventListener("click",function(){
+            document.body.classList.toggle("theme-change");
+
+            // for replace the icon
+            if(document.body.classList.contains("theme-change")){
+                icon.classList.remove("fa-moon")
+                icon.classList.add("fa-sun")
+            }else{
+                icon.classList.remove("fa-sun")
+                icon.classList.add("fa-moon")
+            }
+        })
+    </script>
+
+<script>
+    // using function
+    // let icon = document.querySelector(".fa-moon");
+    // function icon_replace(){
+    //     document.body.classList.toggle("theme-change");
+        // for replace the icon
+    //     if(document.body.classList.contains("theme-change")){
+    //         icon.classList.remove("fa-moon")
+    //         icon.classList.add("fa-sun")
+    //     }else{
+    //         icon.classList.remove("fa-sun")
+    //         icon.classList.add("fa-moon")
+    //     }
+    // }
+</script>
+</body>
+</html>
