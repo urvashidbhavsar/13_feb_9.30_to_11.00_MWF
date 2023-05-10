@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* ================ header ================ */
+header{
+    background-color: teal;
+    position: fixed;
+    top:0;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: 1s ease-in-out all;
+}
+/* ========================================= */
+.container{
+    margin: 0px 80px;
+}
+.header-p{
+    padding: 20px 0px;
+}
+header .header-box{
+    display: flex;
+    align-items: center;
+}
+header .header-box .logo{
+    flex: 0.5;
+}
+header .header-box .logo h1{
+    color: white;
+}
+header .header-box .theme{
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+    color: white;
+}
+header .header-box .theme .toggle-btn .t-btn{
+    height: 35px;
+    width: 35px;
+    background-color: transparent;
+    color: black;
+    border:2px solid black;
+    border-radius: 5px;
+}
+.menu{
+    height: 658px;
+    width: 200px;
+    background-color: brown;
+    position: fixed;
+    top: 0;
+    right:-205px;
+    text-align: center;
+    transition: 1s ease-in-out all;
+}
+.menu ul{
+    line-height: 45px;
+}
+.menu ul a{
+    color: white;
+}
+.menu-scroll{
+    right:0;
+    transition: 1s ease-in-out all;
+}

@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* ================ header ================ */
+header{
+    background-color: transparent;
+    position: fixed;
+    top:0;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: 1s ease-in-out all;
+}
+/* ========== page scroll then menubar bg color change ======== */
+.header-fixed{
+    background-color: teal;
+    position: fixed;
+    top:0;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: 1s ease-in-out all;
+}
+/* ========================================= */
+.container{
+    margin: 0px 80px;
+}
+.header-p{
+    padding: 20px 0px;
+}
+header .header-box{
+    display: flex;
+    align-items: center;
+}
+header .header-box .logo{
+    flex: 0.5;
+}
+header .header-box .logo h1{
+    color: white;
+}
+header .header-box .nav{
+    flex: 2;
+}
+header .header-box .nav ul{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+header .header-box .nav ul li{
+    padding: 10px;
+}
+header .header-box .nav ul li a{
+    color: white;
+}
+header .header-box .theme{
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+    color: white;
+}
+header .header-box .theme .toggle-btn{
+    display: none;
+}
+header .header-box .theme .toggle-btn .t-btn{
+    height: 35px;
+    width: 35px;
+    background-color: transparent;
+    color: black;
+    border:2px solid black;
+    border-radius: 5px;
+    position: relative;
+}
+.image img{
+    width: 100%;
+}
+/* for toggle menubar create random class for replacement */
+header .header-box .nav-bar{
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: tomato;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+header .header-box .nav-bar ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+/* ============ media query =========== */
+@media (max-width:576px) {
+    header .header-box .theme .toggle-btn{
+        display: block;
+    }
+    header .header-box .nav{
+        display: none;
+    }
+    header .header-box .nav-bar{
+        display: block;
+    }
+}
+@media (min-width:576px) {
+    header .header-box .theme .toggle-btn{
+        display: block;
+    }
+    header .header-box .nav{
+        display: none;
+    }
+    header .header-box .nav-bar{
+        display: block;
+    }
+}
+@media (min-width:768px) {
+    header .header-box .theme .toggle-btn{
+        display: block;
+    }
+    header .header-box .nav{
+        display: none;
+    }
+    header .header-box .nav-bar{
+        display: block;
+    }
+}
+@media (min-width:992px) {
+    header .header-box .theme .toggle-btn{
+        display: none;
+    }
+    header .header-box .nav{
+        display: block;
+    }
+}
