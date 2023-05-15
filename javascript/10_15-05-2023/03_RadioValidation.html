@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+    <script>
+        function otherValidate(){
+            let male = document.getElementById("male").checked;
+            let female = document.getElementById("female").checked;
+            if(male == false && female == false){
+                document.getElementById("msg").innerText = "Select Gender";
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="#">
+        <!-- radio button -->
+        <label for="">Gender</label>
+        <input type="radio" name="" id="male"> Male 
+        <input type="radio" name="" id="female"> Female 
+        <br> <span id="msg"></span>
+
+        <br><br>
+        <button type="submit" onclick="return otherValidate()">Check</button>
+    </form>
+</body>
+</html>

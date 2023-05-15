@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+    <script>
+        function check_blnk(){
+            let mno = document.getElementById("mobile").value;
+            if(mno ==  ""){
+                document.getElementById("msg1").innerText = "Enter Mobile No";
+                return false;
+            }
+        }
+        // regex 
+        function mobile_ex(){
+            let mno = document.querySelector("#mobile").value;
+            let reg_ex = /^[0-9]*$/
+            if(mno.match(reg_ex)){
+            // if(reg_ex.test(mno)){
+                document.getElementById("msg1").innerHTML = "";
+                return false;
+            }else{
+                document.getElementById("msg1").innerHTML = "Enter Number only";
+                return false;
+            }
+        }
+        function mobile_length(){
+            let mno = document.getElementById("mobile").value;
+            if(mno.length < 10 || mno.length > 10){
+                document.getElementById("msg2").innerText = "enter proper number"
+                return false;
+            }else{
+                document.getElementById("msg2").innerText = "";
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="#">
+        <!-- minlength="10" maxlength="10"  -->
+        <input type="text" name="" id="mobile" placeholder="Enter Mobile No" onkeyup="return mobile_ex()" onblur="return mobile_length()" maxlength="10">
+        <br>
+        <span id="msg1"></span> <br>
+        <span id="msg2"></span>
+        <br><br>
+        <button type="submit" onclick="return check_blnk()">Click Here to check</button>
+    </form>
+</body>
+</html>

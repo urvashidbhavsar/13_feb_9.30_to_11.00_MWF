@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+    <script>
+        function name_check(){
+            let username = document.getElementById("uname").value;
+            if(username == "" || username == null){
+                // alert("Enter name")
+                document.getElementById("msg").innerText = "Enter name";
+                return false
+            }
+        }
+
+        function name_reg_ex(){
+            // test() => check the value
+            // match() => match the value 
+            
+            let username = document.getElementById("uname").value;
+            let reg_ex = /^[a-zA-Z]*$/;
+            if(reg_ex.test(username)){
+                document.getElementById("msg").innerHTML = "";
+                return false
+            }else{
+                document.getElementById("msg").innerHTML = "Number not allowed";
+                return false
+            }
+        }
+        function blank_field(){
+            let username = document.getElementById("uname").value;
+            if(username == "" || username == null){
+                // alert("Enter name")
+                document.getElementById("msg").innerText = "Enter name";
+                return false
+            }else{
+                document.getElementById("msg").innerText = "";
+                return false
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <form action="#" name="form1">
+        Enter name : 
+        <input type="text" name="" id="uname" onkeyup="return name_reg_ex()" onblur="return blank_field()">
+        <span id="msg"></span>
+        
+        <br><br>
+        <button onclick="return name_check()">Click Here</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color: red;
+        }
+        .change-border{
+            border: 1px solid red;
+        }
+    </style>
+    <script>
+        function mno_check(){
+            // using with form name through
+            // let mno = document.form1.mobile.value;
+
+            let mno = document.getElementById("mno").value;
+            if(mno == "" || mno == null){
+                document.getElementById("msg").innerText = "Enter Mobile No";
+                return false;
+            }
+        }
+        function mno_field_check(){
+            let mno = document.getElementById("mno");
+            if(mno.value == "" || mno.value == null){
+                // document.getElementById("mno").innerHTML = "<style>input{border-color:red}</style>"
+                mno.classList.add("change-border");
+                return false;
+            }else{
+                document.getElementById("msg").innerText = "";
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="#" name="form1">
+        Enter Mobile No :
+        <input type="text" name="mobile" id="mno" onblur="return mno_field_check()">
+        <span id="msg"></span>
+
+        <br><br>
+        <button onclick="return mno_check()">Click Here</button>
+    </form>
+</body>
+</html>
