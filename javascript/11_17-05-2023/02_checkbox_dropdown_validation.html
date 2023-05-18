@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+    <script>
+        function check_value(){
+            let c1 = document.getElementById("chk1").checked;
+            let c2 = document.getElementById("chk2").checked;
+            let c3 = document.getElementById("chk3").checked;
+            if(c1 == false && c2 == false && c3 == false){
+                document.getElementById("msg").innerText = "select experiance"
+                return false;
+            }
+
+            let city = document.getElementById("city").value;
+            if(city == "-1"){
+                document.getElementById("msg1").innerText = "select city"
+                return false
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="#">
+        Experiance : 
+        <input type="checkbox" name="" id="chk1">
+        <label for="">1 year</label>
+        <input type="checkbox" name="" id="chk2">
+        <label for="">2 year</label>
+        <input type="checkbox" name="" id="chk3">
+        <label for="">3 year</label>
+
+        <span id="msg"></span>
+
+        <br><br>
+        City : 
+        <select name="" id="city">
+            <option value="-1">---select---</option>
+            <option value="">surat</option>
+            <option value="">navsari</option>
+        </select>
+        <span id="msg1"></span>
+        <br><br>
+        <button onclick="return check_value()">check</button>
+    </form>
+</body>
+</html>

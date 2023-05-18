@@ -1,0 +1,2 @@
+BOM => Browser object modal 
+DOM => Document object modal
