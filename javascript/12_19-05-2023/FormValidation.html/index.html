@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="regpage">
+        <h1>Reg page</h1>
+        <!-- first name -->
+        <div class="row">
+            <div class="col">First Name</div>
+            <div class="col">
+                <input type="text" id="fname" placeholder="Enter firstname" onkeyup="return name_ex(this,'msg')" onblur="return check_input(this,'msg')">
+            </div>
+            <div class="col">
+                <span id="msg"></span>
+            </div>
+        </div>
+        <!-- last name -->
+        <div class="row">
+            <div class="col">Last Name</div>
+            <div class="col">
+                <input type="text" id="lname" placeholder="Enter lastname" onkeyup="return name_ex(this,'msg1')"
+                onblur="return check_input(this,'msg1')">
+            </div>
+            <div class="col">
+                <span id="msg1"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <button type="submit" onclick="return blnk_val_check()">Submit</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
