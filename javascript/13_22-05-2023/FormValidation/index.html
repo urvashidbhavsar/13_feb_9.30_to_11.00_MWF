@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="regpage">
+        <h1>Reg page</h1>
+        <!-- first name -->
+        <div class="row">
+            <div class="col">First Name</div>
+            <div class="col">
+                <input type="text" id="fname" placeholder="Enter firstname" onkeyup="return name_ex(this,'msg')" onblur="return check_input(this,'msg')">
+            </div>
+            <div class="col">
+                <span id="msg"></span>
+            </div>
+        </div>
+        <!-- last name -->
+        <div class="row">
+            <div class="col">Last Name</div>
+            <div class="col">
+                <input type="text" id="lname" placeholder="Enter lastname" onkeyup="return name_ex(this,'msg1')"
+                onblur="return check_input(this,'msg1')">
+            </div>
+            <div class="col">
+                <span id="msg1"></span>
+            </div>
+        </div>
+        <!-- radio = for gender -->
+        <div class="row">
+            <div class="col">Gender</div>
+            <div class="col">
+               <input type="radio" name="gen" id="male">
+               <label for="">Male</label>
+               <input type="radio" name="gen" id="female">
+               <label for="">Female</label>
+            </div>
+            <div class="col">
+                <span id="msg2"></span>
+            </div>
+        </div>
+        <!-- date of birth -->
+        <div class="row">
+            <div class="col">BirthDate</div>
+            <div class="col">
+                <input type="date" id="dob" onblur="return check_input(this,'msg3')">
+            </div>
+            <div class="col">
+                <span id="msg3"></span>
+            </div>
+        </div>
+        <!-- address -->
+        <div class="row">
+            <div class="col">Address</div>
+            <div class="col">
+                <textarea name="address" id="adr" cols="40" rows="4" onblur="return check_input(this,'msg4')" onkeyup="return address_length()" maxlength="250"></textarea>
+            </div>
+            <div class="col">
+                <span id="msg4"></span>
+            </div>
+        </div>
+        <!-- city -->
+        <div class="row">
+            <div class="col">city</div>
+            <div class="col">
+                <select name="" id="city" onblur="return check_select()">
+                    <option value="-1">---select---</option>
+                    <option value="">Surat</option>
+                    <option value="">Bharuch</option>
+                </select>
+            </div>
+            <div class="col">
+                <span id="msg5"></span>
+            </div>
+        </div>
+        <!-- mobile no -->
+        <div class="row">
+            <div class="col">Mobile No</div>
+            <div class="col">
+               <input type="text" name="" id="mobileNo" onblur="return check_input(this,'msg6')" onkeyup="return mobile_ex(this,'msg6')" maxlength="10">
+            </div>
+            <div class="col">
+                <span id="msg6"></span>
+            </div>
+        </div>
+        <!-- email -->
+        <div class="row">
+            <div class="col">Email</div>
+            <div class="col">
+                <input type="text" name="" id="EmailAdd" onblur="return check_input(this,'msg7')"
+                    onkeyup="return email_ex(this,'msg7')">
+            </div>
+            <div class="col">
+                <span id="msg7"></span>
+            </div>
+        </div>
+        <!-- password -->
+        <div class="row pass_row1">
+            <div class="col">Password</div>
+            <div class="col">
+                <input type="password" name="" id="pass" onblur="return check_input(this,'msg8')" onkeyup="return pass_ex(this,'msg8')" maxlength="12">
+            </div>
+            <div class="col icon1">
+                <span class="fa-solid fa-eye" onclick="showpass()"></span>
+            </div>
+            <div class="col">
+                <span id="msg8"></span>
+            </div>
+        </div>
+        <!-- confirm password -->
+        <div class="row pass_row2">
+            <div class="col">Confirm password</div>
+            <div class="col">
+                <input type="password" name="" id="cpass" onblur="return check_input(this,'msg9')" onkeyup="return match_password()">
+            </div>
+            <div class="col icon2">
+                <span class="fa-solid fa-eye" onclick="cshowpass()"></span>
+            </div>
+            <div class="col">
+                <span id="msg9"></span>
+            </div>
+        </div>
+        <!-- button -->
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <button type="submit" onclick="return blnk_val_check()">Submit</button>
+            </div>
+        </div>
+
+        <!-- note for password -->
+        <p>
+            <b>Note :</b>
+            a password between 8 to 12 characters which contain at least one lowercase letter, one uppercase letter, one numeric
+            digit, and one special character
+        </p>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
