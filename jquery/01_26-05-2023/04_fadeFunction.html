@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jquery online cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#fadein").click(function(){
+                $(".div1").fadeIn(2000);
+            })
+            $("#fadeout").click(function(){
+                $(".div1").fadeOut(2000)
+            })
+            $("#fadetoggle").click(function(){
+                $(".div2").fadeToggle();
+            })
+            $(".div3").mouseover(function(){
+                $(".div3").fadeTo(2000,.5)
+            })
+        })
+    </script>
+    <style>
+        div{
+            display: none;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+        }
+        .div1{
+            background-color: darkblue;
+        }
+        .div2{
+            background-color: darkmagenta;
+        }
+        .div3{
+            display: block;
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <!-- fade function mainly work on opacity  -->
+    <button id="fadein">FadeIn</button>
+    <button id="fadeout">FadeOut</button>
+    <button id="fadetoggle">FadeToggle</button>
+    <button id="fadeto">FadeTo</button>
+
+    <hr>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+</body>
+</html>
