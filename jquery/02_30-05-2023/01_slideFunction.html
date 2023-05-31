@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- cdn link -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $(".div1").mouseover(function(){
+                $(".div1").slideUp(2000);
+            })
+            $(".div1").mouseout(function(){
+                $(".div1").slideDown(2000)
+            })
+            $(".btn3").click(function(){
+                $(".div2").slideToggle(1000)
+            })
+        })
+    </script>
+    <style>
+        .div1{
+            height: 300px;
+            width: 200px;
+            background-color: crimson;
+        }
+        .div2{
+            height: 200px;
+            width: 200px;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn1">SlideUp</button>
+    <button class="btn2">SlideDown</button>
+    <button class="btn3">SlideToggle</button>
+    <hr>
+    <div class="div1"></div>
+    <br>
+    <div class="div2"></div>
+</body>
+</html>

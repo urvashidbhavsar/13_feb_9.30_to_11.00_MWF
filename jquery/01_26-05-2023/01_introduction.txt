@@ -1,0 +1,19 @@
+jquery is a library of javascript.
+
+website : jquery.com 
+
+there are download the jquery library or use cdn 
+
+version => 3.7.0
+
+mainly => sliders.
+functions.
+
+syntax :
+$(document).ready(function(){
+    $("selector").event(function(){
+        $("selector").jquery_function();
+    })
+})
+
+Selector ==> id, class, element 

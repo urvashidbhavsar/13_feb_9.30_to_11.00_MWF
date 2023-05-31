@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+               $("#p1").text("This is second paragraph")
+            })
+            $("#btn2").click(function () {
+                $("#p1").html("<b><u>This is second paragraph</u></b>")
+            })
+            $("#btn3").click(function () {
+                $("input").val("Hello user")
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <button id="btn1">Text()</button>
+    <button id="btn2">HTML()</button>
+    <button id="btn3">Value()</button>
+
+    <hr>
+    <p id="p1">This is first paragraph</p>
+    <br><br>
+    <input type="text" name="" id="" value="" placeholder="Enter any value">
+</body>
+
+</html>

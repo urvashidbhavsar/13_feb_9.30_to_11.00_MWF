@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jquery cdn offline -->
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $(".div1").hide(2000);
+            })
+            $("#btn2").click(function(){
+                $(".div1").show(5000)
+            })
+            $("#btn3").click(function(){
+                $("h1").toggle(1000);
+            })
+        })
+    </script>
+    <style>
+        .div1{
+            height: 200px;
+            width: 200px;
+            background-color: darkcyan;
+        }
+    </style>
+</head>
+<body>
+    <!-- display function maily work on height and width -->
+    <button id="btn1">Hide()</button>
+    <button id="btn2">Show()</button>
+    <button id="btn3">Toggle()</button>
+
+    <h1>Hello user</h1>
+    <div class="div1"></div>
+</body>
+</html>
