@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <style>
+        #div1{
+            height: 200px;
+            width: 250px;
+            background-color: plum;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $(".btn1").click(function(){
+                // empty remove values from element
+                $("#div1").empty();
+            })
+             $(".btn2").click(function () {
+                // remove element
+                $("#div1").remove();
+            })
+        })
+    </script>
+</head>
+<body>
+    <button class="btn1">Empty</button>
+    <button class="btn2">Remove</button>
+        <hr>
+    <div id="div1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, itaque? Modi mollitia nobis possimus, quam veniam vero eveniet expedita? Modi dolorem aliquam deleniti voluptatibus mollitia cum saepe veniam. Voluptatum, cupiditate.
+    </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css">
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- bxslider js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            width: 100%;
+            height: 600px;
+        }
+
+        .bx-wrapper {
+            border: none;
+            box-shadow: none;
+            background-color: transparent;
+        }
+
+        .bx-wrapper .bx-controls-auto,
+        .bx-wrapper .bx-pager {
+            position: absolute;
+            bottom: 22px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .bx-wrapper .bx-pager.bx-default-pager a {
+            background-color: white;
+        }
+
+        .bx-wrapper .bx-pager.bx-default-pager a.active {
+            background-color: red;
+        }
+        .banner1{
+            background: url(images/img2.jpg) no-repeat center;
+            background-size: cover;
+            height: 600px;
+            font-size: 50px;
+            color: white;
+        }
+         .banner2{
+            background: url(images/img3.jpg) no-repeat center;
+            background-size: cover;
+            height: 600px;
+            font-size: 50px;
+            color: white;
+        }
+         .banner3{
+            background: url(images/img4.jpg) no-repeat center;
+            background-size: cover;
+            height: 600px;
+            font-size: 50px;
+            color: white;
+        }
+         .banner4{
+            background: url(images/img5.jpg) no-repeat center;
+            background-size: cover;
+            height: 600px;
+            font-size: 50px;
+            color: white;
+        }
+    </style>
+    <script>
+        $(function () {
+            $('.bxslider').bxSlider({
+                mode: "fade",
+                speed: "1000",
+                infiniteLoop: true,
+                pager: true,
+                pagerType: "full",
+                // pagerShortSeparator:"-",
+                controls: false,
+                auto: true,
+                autoHover: true,
+            });
+        })
+    </script>
+</head>
+
+<body>
+    <div class="bxslider">
+        <div class="banner1">Banner 1</div>
+        <div class="banner2">Banner 2</div>
+        <div class="banner3">Banner 3</div>
+        <div class="banner4">Banner 4</div>
+    </div>
+</body>
+
+</html>
