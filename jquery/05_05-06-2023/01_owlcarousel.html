@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- owl carousel css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <style>
+        .outer{
+            width: 90%;
+            margin: 0 auto;
+        }
+        img{
+            height: 200px;
+            width: 200px;
+        }
+        .owl-theme .owl-nav {
+            position: relative;
+        }
+        .owl-theme .owl-nav .owl-prev{
+            position: absolute;
+            top: -129px;
+            left: 0;
+            background: red !important;
+            height: 30px;
+            width: 30px;
+            color: white !important;
+        }
+        .owl-theme .owl-nav .owl-next{
+            position: absolute;
+            top: -129px;
+            right: 0;
+            background: red !important;
+            height: 30px;
+            width: 30px;
+            color: white !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <img src="images/img1.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="images/img2.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="images/img3.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="images/img4.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="images/img5.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="images/img6.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="images/img7.webp" alt="">
+        </div>
+        <div class="item">
+            <img src="images/img8.jpg" alt="">
+        </div>
+    </div>
+    </div>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- owl carousel cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+        $(function(){
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 30,
+                nav: true,
+                dots :true,
+                autoplay:true,
+                autoplayTimeout:3000,
+                autoplayHoverPause:true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    576: {
+                        items: 2
+                    },
+                    786:{
+                        items:3
+                    },
+                    1000: {
+                        items: 4
+                    },
+                    1250:{
+                        items:5
+                    }
+                }
+            })
+        })
+    </script>
+</body>
+</html>
