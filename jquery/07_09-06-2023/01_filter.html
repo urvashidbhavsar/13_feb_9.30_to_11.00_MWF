@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+        crossorigin="anonymous"></script>
+    <style>
+        .para{
+            display: flex;
+            gap: 10px;
+        }
+        p{
+            padding: 10px;
+            border: 1px solid black;
+        }
+        .chagep{
+            color: blue;
+            font-size: 17px;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                // $("p").filter(".p2").addClass("chagep")
+                // $("p").first().addClass("chagep");
+                // $("p").last().addClass("chagep");
+                // $("p").eq(0).addClass("chagep"); => check equal value based on index number 
+                $("p").not(".p3").addClass("chagep");
+            })
+        })
+    </script>
+</head>
+<body>
+    <button id="btn1">Click Here</button>
+    <div class="para">
+        <p class="p1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, eos, aliquam rem nesciunt ab expedita necessitatibus iure inventore quidem qui illum eius dolores temporibus quaerat ipsa illo sit odit provident.
+        </p>
+        <p class="p2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, eos, aliquam rem nesciunt ab expedita
+            necessitatibus iure inventore quidem qui illum eius dolores temporibus quaerat ipsa illo sit odit provident.
+        </p>
+        <p class="p3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, eos, aliquam rem nesciunt ab expedita
+            necessitatibus iure inventore quidem qui illum eius dolores temporibus quaerat ipsa illo sit odit provident.
+        </p>
+        <p class="p4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, eos, aliquam rem nesciunt ab expedita
+            necessitatibus iure inventore quidem qui illum eius dolores temporibus quaerat ipsa illo sit odit provident.
+        </p>
+    </div>
+</body>
+</html>

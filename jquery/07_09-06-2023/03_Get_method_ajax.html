@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".btn1").click(function(){
+                // $(".load").load();
+                $.get("Data.txt",function(data,textStatus){
+                    // alert(data, textStatus)
+
+                    // $("h1").html("Data :" + data,
+                    // "<br> Text Status :" + textStatus)
+                    
+                    console.log("Data :" + data,
+                    "<br> Text Status :" + textStatus)
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+    <button class="btn1">Load Ajax</button>
+    
+    <h1 class="load"></h1>
+</body>
+</html>

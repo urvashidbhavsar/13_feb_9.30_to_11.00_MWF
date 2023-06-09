@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>string object represent the sequence of character</h3>
+    <p>two way to create : (1) By literals (2) By string object(using new keyword)</p>
+
+
+    <script>
+        // string
+        var str = "Hello world";
+        console.log(str);
+
+        // (1) charAt() -> 	It provides the char value present at the specified index.
+        // syntax : String.charAt(index)  
+        var str = "Hello world";
+        console.log(str.charAt(4));
+
+        // (2) charCodeAt() -> 	It provides the Unicode value of a character present at the specified index.
+        // syntax : string.charCodeAt(index)  
+        var str = "Hello world";
+        console.log(str.charCodeAt(4));
+
+        // (3) concat() -> 	It provides a combination of two or more strings.
+        // syntax : string.concat(str1,str2,...,strn)  
+        var str = "Hello ";
+        var str1 = "world";
+        console.log(str.concat(str1));
+
+        // (4) indexOf() -> It provides the position of a char value present in the given string.
+        var str2 = "Hello world";
+        console.log(str2.indexOf("w"));
+        var str3 = "javascript scripting language";
+        console.log(str3.indexOf("script"));
+
+        // (5) LastIndexOf() -> It provides the position of a char value present in the given string by searching a character from the last position.
+        var lstr = "hello world this is javascript language";
+        console.log(lstr.lastIndexOf("s"));
+
+        // (6) search() -> 	It searches a specified regular expression in a given string and returns its position if a match occurs.
+        // syntax : string.search(regexp)  
+        console.log(lstr.search("this"));
+
+        // (7) match() -> It searches a specified regular expression in a given string and returns that regular expression if a match occurs.
+        // syntax : string.match(regexp)  
+        console.log(lstr.match("this"));
+
+        // (8) replace() -> It replaces a given string with the specified replacement.
+        var rstr = "java language";
+        console.log(rstr.replace("language", "script"));
+
+        // (9) substr() -> It is used to fetch the part of the given string on the basis of the specified starting position and length.
+        // syntax : string.substr(start,length)
+        console.log(rstr.substr(2, 6));
+
+        // (10) substring() -> It is used to fetch the part of the given string on the basis of the specified index.
+        // syntax : string.substring(start,end)
+        console.log(rstr.substring(2, 10));
+
+        // (11) slice() -> It is used to fetch the part of the given string. It allows us to assign positive as well negative index.
+        // syntax : string.slice(start,end)  
+        console.log(rstr.slice(2, 10));
+
+        // (12) toLowerCase() -> It converts the given string into lowercase letter.
+        // syntax : string.toLowerCase()  
+        var str = "HELLO WORLD";
+        console.log(str.toLowerCase());
+
+        // (13) toLocaleLowerCase() -> It converts the given string into lowercase letter on the basis of host?s current locale.
+        // syntax : string.toLocaleLowerCase() 
+        console.log(str.toLocaleLowerCase());
+
+        // (14) toUpperCase() -> It converts the given string into uppercase letter.
+        var str = "hello world"
+        console.log(str.toUpperCase());
+
+        // (15) toLocateUpperCase() -> It converts the given string into uppercase letter on the basis of host?s current locale.
+        console.log(str.toLocaleUpperCase());
+
+        // (16) toString() -> It provides a string representing the particular object.
+        var str = "Hello User"
+        console.log(str.toString());
+
+        // (17) valueOf() -> It provides the primitive value of string object.
+        console.log(str.valueOf());
+
+        // (18) split() -> It splits a string into substring array, then returns that newly created array.
+        var str = "javascript language";
+        console.log(str.split(" "));
+
+        // (19) trim() -> 	It trims the white space from the left and right side of the string.
+        var str1 = "     Hello      ";
+        console.log(str1.trim());
+
+        let strnew = new String("New User")
+        console.log(strnew);
+    </script>
+</body>
+
+</html>
