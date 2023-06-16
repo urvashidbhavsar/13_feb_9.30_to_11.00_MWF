@@ -1,0 +1,7 @@
+custom                  bootstrap 
+max-width(576px)           -
+min-width(576px)           sm (small screen)
+min-width(768px)           md (medium screen)
+min-width(992px)           lg (large screen)
+min-width(1200px)          xl (extra large)
+min-width(1400px)          xxl (extra extra large)
