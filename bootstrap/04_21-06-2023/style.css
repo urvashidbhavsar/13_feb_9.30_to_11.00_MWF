@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none !important;
+}
+.row{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+/* ============ top-header============ */
+.top-header{
+    background-color: #03032e;
+}
+/* ============ header ===============  */
+.header .btnorange{
+    background-color: orangered;
+    color: white;
+    border: 2px solid orangered;
+}
+.header .btnorange:hover {
+    background-color: #03032e;
+    border: 2px solid #03032e;
+    color: white;
+}
+.header .fa-industry{
+    color: orangered;
+}
+.header a{
+    color: black;
+}
+.header .navbar .show{
+    background-color: rgba(255, 98, 0, 0.831);
+    transition: 1s all ease;
+}
+.header .navbar .show li{
+    text-align: center !important;
+}
+.header .navbar .show form {
+    text-align: center;
+}
+/* ================== homepage ============== */
+.homepage{
+    background: url(images/banner.jpg) no-repeat center fixed;
+    background-size: cover;
+}   
+.homepage .btn-white{
+    background-color: white;
+    color: black;
+    height: 50px;
+    width: 150px;
+    font-weight: 700;
+    transition: 0.5s ease all;
+}
+.homepage .btn-white:hover {
+    background-color: orangered;
+    color: white;
+}

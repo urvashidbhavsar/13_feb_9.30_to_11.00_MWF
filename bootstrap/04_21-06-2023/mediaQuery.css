@@ -1,0 +1,17 @@
+@media (max-width:576px) {
+    .timing{
+        display: none;
+    }
+}
+/* =================================================================== */
+@media (min-width:576px) {
+    .timing {
+        display: none;
+    }
+}
+/* =================================================================== */
+@media (min-width:768px) {
+    .timing {
+        display: block;
+    }
+}
