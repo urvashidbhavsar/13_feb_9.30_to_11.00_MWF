@@ -1,0 +1,29 @@
+@media (max-width:576px) {
+    .timing{
+        display: none;
+    }
+}
+/* =================================================================== */
+@media (min-width:576px) {
+    .timing {
+        display: none;
+    }
+}
+/* =================================================================== */
+@media (min-width:768px) {
+    .timing {
+        display: block;
+    }
+    .testmonials .custend{
+        width: 368px;
+    }
+}
+@media (min-width:992px) {
+    .timing {
+        display: block;
+    }
+
+    .testmonials .custend {
+        width: unset;
+    }
+}
