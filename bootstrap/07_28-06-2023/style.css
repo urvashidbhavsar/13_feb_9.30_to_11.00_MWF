@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none !important;
+}
+.row{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+/* ============ top-header============ */
+.top-header{
+    background-color: #03032e;
+}
+/* ============ header ===============  */
+.header .btnorange{
+    background-color: orangered;
+    color: white;
+    border: 2px solid orangered;
+}
+.header .btnorange:hover {
+    background-color: #03032e;
+    border: 2px solid #03032e;
+    color: white;
+}
+.header .fa-industry{
+    color: orangered;
+}
+.header a{
+    color: black;
+}
+.header .navbar .show{
+    background-color: rgba(255, 98, 0, 0.831);
+    transition: 1s all ease;
+}
+.header .navbar .show li{
+    text-align: center !important;
+}
+.header .navbar .show form {
+    text-align: center;
+}
+/* ================== homepage ============== */
+.homepage{
+    background: url(images/banner.jpg) no-repeat center fixed;
+    background-size: cover;
+}   
+.homepage .btn-white{
+    background-color: white;
+    color: black;
+    height: 50px;
+    width: 150px;
+    font-weight: 700;
+    transition: 0.5s ease all;
+}
+.homepage .btn-white:hover {
+    background-color: orangered;
+    color: white;
+}
+.homepage .slick-dots {
+    width: unset;
+}
+.homepage .slick-dots li.slick-active button:before {
+    color: white;
+}
+.homepage .slick-dots li button:before {
+    font-size: 14px;
+    color: red;
+    opacity: 1;
+}
+/* ============ employee work ================= */
+.empwork .emp-count span{
+    color: #03032e;
+}
+.empwork .emp-count h1 {
+    color: black;
+}
+.empwork .emp-count h5 {
+    color: black;
+}
+.empwork .emp-count p {
+    text-transform: capitalize;
+}
+.empwork .emp_benifit{
+    background-color: #03032e;
+}
+.empwork .emp_benifit span{
+    font-size: 40px;
+    color: orangered;
+}
+/* ============ emp info ============ */
+.emp-info{
+    background: url(images/mid-banner.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+.emp-info button{
+    height: 40px;
+    width: 130px;
+    background-color: orangered;
+    color: white;
+    border: 2px solid transparent;
+}
+.emp-info button:hover {
+    background-color: white;
+    color: black;
+}
+.maintain_val .maintainDetails{
+    background-color: beige;
+}
+.maintain_val .maintainDetails span{
+    color: orangered;
+    font-size: 35px;
+}
+/* testmonials */
+.testmonials{
+    background: url(images/banner-2.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+.testmonials .custreview{
+    background-color: white;
+    padding: 30px;
+}
+.testmonials .custreview .cust-bio p{
+    color: orangered;
+}
+.testmonials .cust {
+    display: flex;
+    justify-content: center;
+}
+.card{
+    border: unset !important;
+    border-radius: 0 !important;
+}
+.card .card-body .card-title{
+    margin-bottom: 0;
+}
+.card .card-body .card-title a {
+    color: black;
+}
+.card .card-body .card-title a:hover{
+    color: rgb(44, 43, 43);
+}
+.card .card-body span{
+    color: orangered;
+    font-size: 14px;
+}
+.card .card-body a {
+    color: orangered;
+}
+.card .card-body a:hover {
+    color: black;
+}
+.card .card-img-top{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+/* ========= update section ====== */
+.updates{
+    background-color: #020d26;
+}
+.emailform{
+    display: flex;
+    align-items: center;
+}
+.updates h2{
+    color: orangered;
+}
+.updates input[type="text"]{
+    border-radius: 0;
+}
+.updates .btnorange {
+    background-color: orangered;
+    color: white;
+    border: 2px solid orangered;
+    border-radius: 0;
+    transition: 0.5s ease all;
+}
+
+.updates .btnorange:hover {
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+}
+.updates .divide{
+    height:1px;
+    width: 100%;
+    background-color: white;
+}
+.updates .comp-info .icon span{
+    color: orangered;
+    font-size: 40px;
+}
+.updates .comp-info a{
+    color: white;
+    transition: 0.5s ease all;
+}
+.updates .comp-info a:hover {
+    color: orangered;
+}
+footer .navbar-brand h1{
+    color: #03032e;
+}
+footer .navbar-brand h1 span{
+    color: orangered;
+}
+footer .contactbtn{
+    text-align: right;
+}
+footer .contactbtn button{
+    height: 55px;
+    width: 180px;
+    background: orangered;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    border: 2px solid transparent;
+    transition: 0.5s all ease;
+    border-radius: 10px;
+}
+footer .contactbtn button:hover {
+    background-color: #03032e;
+}
+footer .divider {
+    height: 1px;
+    width: 100%;
+    background-color: gray;
+}
+footer ul li{
+    padding-bottom: 6px;
+}
+footer ul a{
+    color:gray;
+}
+footer h4{
+    color: black;
+}
+footer .contact span{
+    color: orangered;
+}
+
+.footer-bottom{
+    background-color: #03032e;
+}
+.footer-bottom .socials span{
+    color: #b3b0b0;
+    cursor: pointer;
+}
+.footer-bottom .socials span:hover {
+    color: white;
+}
+.footer-bottom .terms{
+    text-align: right;
+}
+.footer-bottom .terms a{
+    color: #b3b0b0;
+}
+.footer-bottom .terms a:hover {
+    color: white;
+}
