@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat",sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+.OrderBtn{
+    background-color: #21243d;
+    color: white;
+    width: 150px;
+    border-radius: 40px;
+}
+/* =============== header ================ */
+header{
+    background-color: #21243d;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 11111;
+}
+.navbar-expand-lg .navbar-nav {
+    flex:1;
+    justify-content: space-evenly !important;
+}
+.navbar-expand-lg .navbar-nav a{
+    color: white;
+}
+.navbar-expand-lg button {
+    background-color: white;
+}
+.homepage{
+    background: url(images/homepagenew.png) no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.homepage .homepage-cont{
+    padding: 90px 0px;
+}
+.homepage .homepage-cont h1{
+    font-size: 60px;
+}
+.homepage .homepage-cont p{
+    color: white;
+    font-size: 19px;
+}
+.pop-menu{
+    background-color: #21243d;
+    position: relative;
+    overflow: hidden;
+    z-index: 5;
+}
+.dots-right{
+    position: absolute;
+    right: -13px;
+    top: 179px;
+}
+.dots-top {
+    position: absolute;
+    top: -60px;
+    transform: rotate(90deg);
+    left: 339px;
+    z-index: -1;
+}
+.circle-top{
+    position: absolute;
+    top: -36px;
+    right: -39px;
+    z-index: -1;
+}
+.circle-left{
+    position: absolute;
+    left: -53px;
+    bottom: 27px;
+    z-index: -1;
+}
+.cross-top{
+    position: absolute;
+    top: 97px;
+    z-index: -1;
+}
+.cross-bottom{
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    z-index: -1;
+}
+.order_product{
+    background-color: #ffd17e;
+}
+.statistics {
+    background-color: #21243d;
+}
+.statistics .numbers{
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    display: grid;
+    place-content: center;
+}
+.pro-img{
+    height: 350px;
+    width: 350px;
+}
+.client-info{
+    background-image: url(images/bgimg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+.client-info::after {
+   content: "";
+   position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #21243dc0;
+    z-index: -1;
+}
+.feedback{
+    background-color: #ffd17e;
+}
+.feedback input[type="text"]{
+    border-radius: 40px 0 0 40px;
+}
+.feedback .input-group-text{
+    right: 40px;
+}
+.feedback .subform{
+    width: 50%;
+}
+footer{
+    background-color: #171616;
+}
+footer .social_icon{
+    display: flex;
+    gap: 20px;
+}
+footer .social_icon .icons{
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+footer .social_icon .icons a{
+    color: black;
+}
+footer a{
+    color: white;
+    text-transform: capitalize;
+}
+@media (max-width:576px) {
+    .homepage .homepage-cont{
+        padding: 40px 0px;
+    }
+    .homepage .homepage-cont h1{
+        font-size: 45px;
+    }
+    .pro-img{
+        height: 250px;
+        width: 250px;
+    }
+      .feedback .subform {
+        width: 100%;
+    }
+    .feedback .input-group-text{
+        position:unset;
+        
+    }
+    .feedback .input-group{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        text-align: center;
+    }
+    .feedback input[type="text"] {
+        border-radius: 0;
+        width: 100%;
+    }
+    .feedback button{
+        margin: auto !important;
+    }
+}
+@media (min-width:576px) {
+     .feedback .subform {
+        width: 80%;
+    }
+}
+@media (min-width:768px) {
+    .feedback .subform {
+        width: 80%;
+    }
+}
+@media (min-width:992px) {
+    .feedback .subform {
+        width: 50%;
+    }
+}
+@media (min-width:1200px) {
+    .feedback .subform {
+        width: 50%;
+    }
+}
